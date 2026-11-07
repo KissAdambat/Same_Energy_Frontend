@@ -2,6 +2,19 @@ body {
   padding-top: 81px;
 }
 
+.app-shell {
+  display: flex;
+  min-height: calc(100vh - 81px);
+  flex-direction: column;
+}
+
+.page-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background: #0b0b0b;
+}
+
 header {
   position: fixed;
   z-index: 1000;
@@ -54,6 +67,7 @@ nav a.active {
 }
 
 .hero {
+  flex: 1;
   padding: 27px clamp(20px, 2.9vw, 50px) 28px;
   background: #0b0b0b;
 }
@@ -139,6 +153,7 @@ nav a.active {
 }
 
 footer {
+  margin-top: auto;
   min-height: 164px;
   padding: 38px 20px 30px;
   border-top: 1px solid #222;
@@ -170,6 +185,10 @@ footer small {
 @media (max-width: 768px) {
   body {
     padding-top: 116px;
+  }
+
+  .app-shell {
+    min-height: calc(100vh - 116px);
   }
 
   header {
