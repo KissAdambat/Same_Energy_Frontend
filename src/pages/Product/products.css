@@ -7,6 +7,32 @@
   padding: clamp(24px, 4vw, 56px);
 }
 
+#active-brand {
+  margin: 16px 0;
+  color: #aaa;
+}
+
+.shop-search-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #d4af37;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+}
+
+.shop-search {
+  width: min(100%, 480px);
+  padding: 12px 14px;
+  border: 1px solid #444;
+  outline: none;
+  background: #121212;
+  color: #fff;
+}
+
+.shop-search:focus {
+  border-color: #d4af37;
+}
+
 .products-grid {
   width: min(100%, 1440px);
   margin: 0 auto;
